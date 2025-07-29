@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: task_cli_upgrade_deploy.html 
+keywords: administer, administering, cli, deploy, upgrade deploy 
+summary: 您可以使用命令行界面就地升级现有的 Deploy 实用程序虚拟机。 
+---
+= 升级ONTAP Select Deploy 实例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用命令行界面就地升级现有的 Deploy 实用程序虚拟机。
+
+
+
+== 开始之前
+
+确保升级期间不使用 Deploy 执行任何其他任务。有关升级 Deploy 实用程序的信息和限制，请参阅当前发行说明。
+
+
+NOTE: 如果您安装了ONTAP Select Deploy 管理实用程序的旧实例，则应升级到当前版本。ONTAPONTAP Select节点和ONTAP Select Deploy 组件将单独升级。请参阅link:concept_adm_upgrading_nodes.html["升级ONTAP Select节点"^]了解更多详情。
+
+
+
+== 下载升级包
+
+要开始升级过程，您必须从NetApp支持站点下载相应的 Deploy 虚拟机升级文件。升级包格式为单个压缩文件。
+
+.步骤
+. 访问link:https://mysupport.netapp.com/site/["NetApp 支持站点"^]使用网络浏览器并从下载菜单中选择*下载*。
+. 向下滚动并选择 * ONTAP Select Deploy Upgrade*。
+. 选择所需的升级包版本。
+. 查看最终用户许可协议 (EULA) 并选择*接受并继续*。
+. 选择并下载适当的包，根据您的环境需要响应所有提示。
+
+
+
+
+== 将包上传到 Deploy 虚拟机
+
+获取升级包后，必须将文件上传到Deploy虚拟机。
+
+.开始之前
+您必须在本地工作站上准备好升级文件。您还必须知道管理员用户帐户的密码。
+
+.关于此任务
+此任务描述了将文件上传到 Deploy 虚拟机的一种方法。可能还有其他更适合您环境的选项。
+
+.步骤
+. 在本地工作站的命令 shell 中，使用 scp 实用程序将映像文件上传到 Deploy 虚拟机。
++
+示例
+
++
+....
+scp ONTAPdeploy2.12_upgrade.tar.gz admin@10.228.162.221:/home/admin (provide password when prompted)
+....
+
+
+.结果
+升级文件存储在管理员用户的主目录中。
+
+
+
+== 应用升级包
+
+将升级文件上传到 Deploy 虚拟机后，即可应用升级。
+
+.开始之前
+您必须知道升级文件在 Deploy 实用程序虚拟机中的哪个目录中。此外，请确保在升级过程中未使用 Deploy 执行任何其他任务。
+
+.步骤
+. 使用管理员帐户通过 SSHSign in到 Deploy 实用程序 CLI。
+. 使用适当的目录路径和文件名执行升级：
++
+`deploy upgrade -package-path FILEPATH`
+
++
+示例
+
++
+....
+deploy upgrade -package-path /home/admin/ONTAPdeploy2.12_upgrade.tar.gz
+....
+
+
+.完成后
+升级过程完成之前，系统会要求您创建 Deploy 虚拟机配置的备份。此外，您还应清除浏览器缓存，以便查看新创建的 Deploy 页面。

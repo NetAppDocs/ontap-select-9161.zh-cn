@@ -1,0 +1,183 @@
+---
+sidebar: sidebar 
+permalink: reference_new_ots.html 
+keywords: new features 
+// summary: The current release includes several new features and improvements specific to ONTAP Select. 
+summary: 当前版本包括几个特定于ONTAP Select 的新功能或改进。 
+---
+= ONTAP Select的新增功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解ONTAP Select受支持版本中的新功能和增强功能。
+
+
+
+== ONTAP Select 9.16.1
+
+ONTAP Select 9.16.1 包含多项新功能和改进。
+
+更新了NetApp许可证文件支持:: 从ONTAP Select 9.16.1 开始， NetApp许可证文件 (NLF) 支持已更新。新的 NLF 格式包含 ARP、 ONTAP S3 和 S3 SnapMirror功能的许可证。link:reference_lic_ontap_features.html#ontap-features-automatically-enabled-by-default["了解更多"] 。
++
+--
+对于新的ONTAP Select 9.16.1 Deploy，系统会自动应用新的 NLF 格式。将现有ONTAP Select Deploy 升级到 9.16.1 时，不会应用新的 NLF 格式。要获取 ARP、 ONTAP S3 和 S3 SnapMirror功能许可证，您必须在升级后下载更新的 NLF。如果您恢复到ONTAP Select 9.15.1 或更早版本，则必须重新安装升级前拥有的功能许可证。
+
+--
+支持自主勒索软件防护:: ONTAP Select 9.16.1 引入了对自主勒索软件防护 (ARP) 的支持。ONTAPONTAP Select 9.16.1 仅支持 ARP 的手动更新，不支持自动更新。ARP功能许可证包含在ONTAP Select 9.16.1 的 NLF 中。link:reference_lic_ontap_features.html#ontap-features-automatically-enabled-by-default["了解更多"] 。
+增强的 VMware ESXi 支持:: ONTAP Select 9.16.1 包含对 VMware ESXi 8.0 U3 的支持。
+更新了 KVM 虚拟机管理程序支持:: 从ONTAP Select 9.16.1 开始，Red Hat Enterprise Linux (RHEL) 9.5 和 Rocky Linux 9.5 支持基于内核的虚拟机 (KVM) 虚拟机管理程序。
+
+
+
+
+== ONTAP Select 9.15.1
+
+ONTAP Select 9.15.1 包含多项新功能和改进。
+
+更新了 KVM 虚拟机管理程序支持:: 从ONTAP Select 9.15.1 开始，RHEL 9.4 和 Rocky Linux 9.4 支持基于内核的虚拟机 (KVM) 虚拟机管理程序。
+支持集群扩容和缩容:: 从ONTAP Select 9.15.1 开始，支持集群扩展和收缩。
++
+--
+* 集群从六节点扩展到八节点集群
++
+您可以使用集群扩展功能将集群大小从六节点集群增加到八节点集群。目前不支持从一节点、两节点或四节点集群扩展至六节点或八节点集群。link:task_cluster_expansion_contraction.html#expand-the-cluster["了解更多"] 。
+
+* 集群收缩：八节点集群到六节点集群
++
+您可以使用集群缩减功能将集群规模从八节点集群缩减为六节点集群。目前不支持将集群从六节点或八节点集群缩减为一节点、两节点或四节点集群。link:task_cluster_expansion_contraction.html#contract-the-cluster["了解更多"] 。
+
+
+
+--
+
+
+
+NOTE: 对集群扩展和收缩的支持仅限于 ESX 集群。
+
+
+
+== ONTAP Select 9.14.1
+
+ONTAP Select 9.14.1 包含多项新功能和改进。
+
+支持 KVM 虚拟机管理程序:: 从ONTAP Select 9.14.1 开始，已恢复对 KVM 虚拟机管理程序的支持。此前， ONTAP Select 9.10.1 中已移除在 KVM 虚拟机管理程序上部署新集群的支持，而ONTAP Select 9.11.1 中已移除对管理现有 KVM 集群和主机（脱机或删除除外）的支持。
+不再支持部署 VMware vCenter 插件:: 从ONTAP Select 9.14.1 开始，不再支持 Deploy VMware vCenter 插件。
+更新了ONTAP Select Deploy 支持:: 如果您运行的ONTAP Select Deploy 9.14.1 版本低于 9.14.1P2，则应尽快升级到ONTAP Select Deploy 9.14.1P2。有关更多信息，请参阅link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2886733["ONTAP Select 9.14.1 发行说明"^] 。
+增强的 VMware ESXi 支持:: ONTAP Select 9.14.1 包含对 VMware ESXi 8.0 U2 的支持。
+
+
+
+
+== ONTAP Select 9.13.1
+
+ONTAP Select 9.13.1 包含多项新功能和改进。
+
+支持 NVMe over TCP:: 升级到ONTAP Select 9.13.1 时，您必须拥有新的许可证才能支持 NVMe over TCP。首次从 9.13.1 版本部署ONTAP Select时，将自动包含此许可证。
+更新了 VMware ESXi 支持:: 从ONTAP 9.13.1 开始，VMware ESXi 8.0.1 GA（内部版本 20513097）支持硬件版本 4 及更高版本。
+更新了ONTAP Select Deploy 支持:: 自 2024 年 4 月起， NetApp支持站点上不再提供ONTAP Select Deploy 9.13.1。如果您正在运行ONTAP Select Deploy 9.13.1，请尽快升级到ONTAP Select Deploy 9.14.1P2。有关更多信息，请参阅link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2886733["ONTAP Select 9.14.1 发行说明"^] 。
+
+
+
+
+== ONTAP Select 9.12.1
+
+ONTAP Select 9.12.1 受益于核心ONTAP产品当前版本中的大部分新开发功能。它不包含任何特定于ONTAP Select 的新功能或改进。
+
+自 2024 年 4 月起， NetApp支持站点上不再提供ONTAP Select Deploy 9.12.1。如果您正在运行ONTAP Select Deploy 9.12.1，请尽快升级到ONTAP Select Deploy 9.14.1P2。有关更多信息，请参阅link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2886733["ONTAP Select 9.14.1 发行说明"^] 。
+
+
+
+== ONTAP Select 9.11.1
+
+ONTAP Select 9.11.1 包含多项新功能和改进。
+
+增强的 VMware ESXi 支持:: ONTAP Select 9.11.1 包含对 VMware ESXi 7.0 U3C 的支持。
+支持 VMware NSX-T:: ONTAP Select 9.10.1 及更高版本已符合 VMware NSX-T 3.1.2 版的要求。在使用 OVA 文件和ONTAP Select Deploy 管理实用程序部署的ONTAP Select单节点集群中使用 NSX-T 时，不会出现任何功能问题或缺陷。但是，在ONTAP Select多节点集群中使用 NSX-T 时，请注意ONTAP Select 9.11.1 的以下限制：
++
+--
+* 网络连接检查器
++
+当针对基于 NSX-T 的网络运行时，通过 Deploy CLI 提供的网络连接检查器会失败。
+
+
+
+--
+KVM 虚拟机管理程序不再受支持::
++
+--
+* 从ONTAP Select 9.10.1 开始，您无法再在 KVM 虚拟机管理程序上部署新集群。
+* 从ONTAP Select 9.11.1 开始，除脱机和删除功能外，所有管理功能不再适用于现有的 KVM 集群和主机。
++
+NetApp强烈建议客户规划并执行从ONTAP Select for KVM 到任何其他ONTAP平台（包括ONTAP Select for ESXi）的完整数据迁移。有关更多信息，请参阅 https://mysupport.netapp.com/info/communications/ECMLP2877451.html["EOA通知"^]
+
+
+
+--
+
+
+
+
+== ONTAP Select 9.10.1
+
+ONTAP Select 9.10.1 包含多项新功能和改进。
+
+支持 VMware NSX-T:: ONTAP Select 9.10.1 已通过 VMware NSX-T 3.1.2 版认证。在使用 OVA 文件和ONTAP Select Deploy 管理实用程序部署的ONTAP Select单节点集群中，使用 NSX-T 不会出现任何功能问题或缺陷。但是，在ONTAP Select多节点集群中，使用 NSX-T 时，请注意以下要求和限制：
++
+--
+* 集群 MTU
++
+在部署集群之前，您必须手动将集群 MTU 大小调整为 8800，以应对额外的开销。VMware的指导是，在使用 NSX-T 时留出 200 字节的缓冲区。
+
+* 网络 4x10Gb 配置
++
+对于在配置了四个网卡的 VMware ESXi 主机上部署ONTAP Select ，Deploy 实用程序会提示您遵循最佳实践，将内部流量拆分到两个不同的端口组，并将外部流量拆分到两个不同的端口组。但是，在使用覆盖网络时，此配置不起作用，您应该忽略此建议。在这种情况下，您应该只使用一个内部端口组和一个外部端口组。
+
+* 网络连接检查器
++
+当针对基于 NSX-T 的网络运行时，通过 Deploy CLI 提供的网络连接检查器会失败。
+
+
+
+--
+KVM 虚拟机管理程序不再受支持:: 从ONTAP Select 9.10.1 开始，您无法再在 KVM 虚拟机管理程序上部署新集群。但是，如果您将集群从先前版本升级到 9.10.1，仍然可以使用 Deploy 实用程序来管理该集群。
+
+
+
+
+== ONTAP Select 9.9.1
+
+ONTAP Select 9.9.1 包含多项新功能和改进。
+
+处理器系列支持:: 从ONTAP Select 9.9.1 开始， ONTAP Select仅支持 Intel Xeon Sandy Bridge 或更高版本的 CPU 型号。
+更新了 VMware ESXi 支持:: ONTAP Select 9.9.1 增强了对 VMware ESXi 的支持。目前支持以下版本：
++
+--
+* ESXi 7.0 U2
+* ESXi 7.0 U1
+
+
+--
+
+
+
+
+== ONTAP Select 9.8
+
+ONTAP Select 9.8 中包含一些新增和更改的功能。
+
+高速接口:: 高速接口功能提供 25G (25GbE) 和 40G (40GbE) 选项，增强了网络连接性。为了在使用这些更高速度时获得最佳性能，您应遵循ONTAP Select文档中所述的有关端口映射配置的最佳实践。
+更新了 VMware ESXi 支持:: ONTAP Select 9.8 在对 VMware ESXi 的支持方面有两项变化。
++
+--
+* 支持 ESXi 7.0（GA 版本 15843807 及更高版本）
+* ESXi 6.0 不再受支持
+
+
+--
+

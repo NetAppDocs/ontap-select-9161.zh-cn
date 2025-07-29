@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task_cli_clusters.html 
+keywords: administer, administering, cli, clusters 
+summary: 您可以执行多项相关任务来管理ONTAP Select集群。 
+---
+= ONTAP Select集群
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以执行多项相关任务来管理ONTAP Select集群。
+
+
+
+== 删除ONTAP Select集群
+
+当不再需要ONTAP Select集群时，您可以使用命令行界面将其删除。
+
+.关于此任务
+集群必须处于离线状态。
+
+.步骤
+. 使用管理员帐户Sign in到部署虚拟机 CLI。
+. 显示集群状态： 
+`cluster show -name CLUSTERNAME`
+. 如果集群未处于离线状态，则将其移至离线状态： 
+`cluster offline -name CLUSTERNAME`
+. 确认集群处于离线状态后，删除集群： 
+`cluster delete -name CLUSTERNAME`
+
