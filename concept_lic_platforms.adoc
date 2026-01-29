@@ -173,10 +173,7 @@ NOTE: 基于内核的虚拟机 (KVM) 不支持在 SW-RAID 配置中使用大型�
 2+| 虚拟机管理程序支持 (VMware) 3+| VMware vSphere 7.0GA 及更新 1 至 3C VMware vSphere 8.0GA 及更新 1 至 3 
 
 
-2+| 虚拟机管理程序支持 (KVM) 3+| RedHat Enterprise Linux 64 位 (KVM) 9.5、9.4、9.3、9.2、9.1、9.0、8.9、8.8、8.7 和 8.6 Rocky Linux (KVM) 9 和 8 
-
-
-2+| 管理软件 3+| NetApp Active IQ Unified Manager管理套件ONTAP Select Deploy Utility SnapCenter （可选） 
+2+| 虚拟机管理程序支持 (KVM) 3+| RedHat Enterprise Linux 64-bit (KVM) 9.5、9.4、9.3、9.2、9.1、9.0、8.9、8.8、8.7 和 8.6 Rocky Linux (KVM) KVM on Rocky Linux 9.5、9.4、9.3、9.2、9.1、9.0、8.9、8.8、8.7 和 8.6 
 |===
 --
 ====
