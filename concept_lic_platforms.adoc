@@ -18,6 +18,7 @@ summary: 您可以购买三个平台容量级别之一的ONTAP Select容量层�
 
 
 
+[[what-a-platform-license-offering-provides]]
 == 平台许可证产品提供什么
 
 特定的许可证产品在两个方面定义和限制了虚拟机管理程序主机的功能：
@@ -30,12 +31,14 @@ summary: 您可以购买三个平台容量级别之一的ONTAP Select容量层�
 
 
 
+[[platform-license-offerings]]
 == 平台许可证产品
 
 有三种平台许可证可供选择。
 
 
 
+[[standard]]
 === 标准
 
 标准产品提供以下功能：
@@ -48,6 +51,7 @@ summary: 您可以购买三个平台容量级别之一的ONTAP Select容量层�
 
 
 
+[[premium]]
 === 高级
 
 高级产品提供以下功能：
@@ -61,6 +65,7 @@ summary: 您可以购买三个平台容量级别之一的ONTAP Select容量层�
 
 
 
+[[premium-xl]]
 === 高级加大码
 
 高级 XL 产品提供以下功能：
@@ -77,6 +82,7 @@ NOTE: 基于内核的虚拟机 (KVM) 不支持在 SW-RAID 配置中使用大型�
 
 
 
+[[compare-hardware-support-for-platform-license-offerings]]
 == 比较平台许可证产品的硬件支持
 
 标准版、高级版和高级 XL 许可证产品支持多种硬件和软件。有关硬件和软件版本的最新信息，请参阅link:https://mysupport.netapp.com/matrix/["互操作性表工具"^] 。

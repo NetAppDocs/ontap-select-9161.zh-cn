@@ -19,6 +19,7 @@ summary: 当前版本包括几个特定于ONTAP Select 的新功能或改进。
 
 
 
+[[ontap-select-9-16-1]]
 == ONTAP Select 9.16.1
 
 ONTAP Select 9.16.1 包含多项新功能和改进。
@@ -36,6 +37,7 @@ ONTAP Select 9.16.1 包含多项新功能和改进。
 
 
 
+[[ontap-select-9-15-1]]
 == ONTAP Select 9.15.1
 
 ONTAP Select 9.15.1 包含多项新功能和改进。
@@ -62,6 +64,7 @@ NOTE: 对集群扩展和收缩的支持仅限于 ESX 集群。
 
 
 
+[[ontap-select-9-14-1]]
 == ONTAP Select 9.14.1
 
 ONTAP Select 9.14.1 包含多项新功能和改进。
@@ -74,6 +77,7 @@ ONTAP Select 9.14.1 包含多项新功能和改进。
 
 
 
+[[ontap-select-9-13-1]]
 == ONTAP Select 9.13.1
 
 ONTAP Select 9.13.1 包含多项新功能和改进。
@@ -85,6 +89,7 @@ ONTAP Select 9.13.1 包含多项新功能和改进。
 
 
 
+[[ontap-select-9-12-1]]
 == ONTAP Select 9.12.1
 
 ONTAP Select 9.12.1 受益于核心ONTAP产品当前版本中的大部分新开发功能。它不包含任何特定于ONTAP Select 的新功能或改进。
@@ -93,6 +98,7 @@ ONTAP Select 9.12.1 受益于核心ONTAP产品当前版本中的大部分新开�
 
 
 
+[[ontap-select-9-11-1]]
 == ONTAP Select 9.11.1
 
 ONTAP Select 9.11.1 包含多项新功能和改进。
@@ -123,6 +129,7 @@ NetApp强烈建议客户规划并执行从ONTAP Select for KVM 到任何其他ON
 
 
 
+[[ontap-select-9-10-1]]
 == ONTAP Select 9.10.1
 
 ONTAP Select 9.10.1 包含多项新功能和改进。
@@ -150,6 +157,7 @@ KVM 虚拟机管理程序不再受支持:: 从ONTAP Select 9.10.1 开始，您�
 
 
 
+[[ontap-select-9-9-1]]
 == ONTAP Select 9.9.1
 
 ONTAP Select 9.9.1 包含多项新功能和改进。
@@ -167,6 +175,7 @@ ONTAP Select 9.9.1 包含多项新功能和改进。
 
 
 
+[[ontap-select-9-8]]
 == ONTAP Select 9.8
 
 ONTAP Select 9.8 中包含一些新增和更改的功能。
